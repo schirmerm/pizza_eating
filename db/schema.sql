@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS pizza_db;
+
+CREATE DATABASE pizza_db;
+
+USE pizza_db;
+
+CREATE TABLE pizzas (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    eaten BOOL NOT NULL DEFAULT 0
+);
